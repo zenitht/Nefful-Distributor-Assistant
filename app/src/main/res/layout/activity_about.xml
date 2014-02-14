@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:padding="5dp"
+            android:showDividers="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:id="@+id/about_nda_header"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_app"
+                android:id="@+id/about_nda_content"
+                android:layout_marginTop="5dp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_version"
+                android:id="@+id/version"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/license"
+                android:id="@+id/license"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/libraries"
+                android:id="@+id/libraries_header"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/libraries_content"
+                android:id="@+id/libraries_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tips"
+                android:id="@+id/tips"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tip1"
+                android:id="@+id/tip1"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tip2"
+                android:id="@+id/tip2"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tip3"
+                android:id="@+id/tip3"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tip4"
+                android:id="@+id/tip4"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tip5"
+                android:id="@+id/tip5"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tip6"
+                android:id="@+id/tip6"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tip7"
+                android:id="@+id/tip7"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bugs_report"
+                android:id="@+id/bugs_report"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_email"
+                android:id="@+id/email"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/disclaimer"
+                android:id="@+id/disclaimer_header"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/disclaimer_content"
+                android:id="@+id/disclaimer_content"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donations"
+                android:id="@+id/donation_header"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donations_content"
+                android:id="@+id/donation_content"
+                android:layout_marginTop="5dp" />
+
+            <include layout="@layout/donations" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

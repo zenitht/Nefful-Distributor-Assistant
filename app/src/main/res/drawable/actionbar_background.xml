@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient android:startColor="#a276eb" android:endColor="#6a3ab2" android:angle="270" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/actionbar_bottom" />
+</layer-list>

@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainCategoriesActivity">
+
+    <ImageView
+        android:id="@+id/beautiful_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/beautiful_story"
+        android:src="@drawable/btn_beautiful_story_state"
+        android:layout_marginBottom="5dp" />
+
+    <ImageView
+        android:id="@+id/teviron_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/teviron_story"
+        android:src="@drawable/btn_teviron_story_state"
+        android:paddingBottom="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <ImageView
+        android:id="@+id/young_life_story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/young_life_story"
+        android:src="@drawable/btn_young_life_story_state"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/nefful_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:contentDescription="@string/nefful_home"
+        android:src="@android:drawable/bottom_bar"
+        android:text="@string/nefful_home"
+        android:background="@drawable/btn_state"
+        android:layout_gravity="center"
+        style="@style/ButtonWhiteText"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/nefful_mes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:contentDescription="@string/nefful_mes"
+        android:src="@android:drawable/bottom_bar"
+        android:text="@string/nefful_mes"
+        android:background="@drawable/btn_state"
+        android:layout_gravity="center"
+        style="@style/ButtonWhiteText"
+        android:layout_marginBottom="5dp" />
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/preview_infobar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/preview_productPhoto"
+        android:layout_width="45dp"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="ContentDescription" />
+
+    <include
+        layout="@layout/listview_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/preview_productPhoto"
+        android:id="@+id/include" />
+
+    <TextView
+        android:id="@+id/preview_subtotal"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/include" />
+
+    <TextView
+        android:id="@+id/preview_remark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textStyle="italic"
+        android:layout_toLeftOf="@+id/preview_subtotal"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/preview_productPhoto"
+        android:layout_below="@+id/include"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.0'
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 19
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:+'
+    compile 'com.android.support:appcompat-v7:+'
+    compile files('libs/itextg-5.4.5.jar')
+    compile files('libs/PdfViewer.jar')
+    compile files('libs/scpkix-jdk15on-1.47.0.2.jar')
+    compile project(':library:PagerSlidingTabStrip')
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}

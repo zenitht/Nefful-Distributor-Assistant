@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/print" 
+        android:title="@string/print"
+        android:icon="@drawable/ic_print_state"
+        android:showAsAction="always"/>       
+
+	<item 
+	    android:id="@+id/share" 
+	    android:title="@string/share"
+	    android:showAsAction="always" 
+	    android:actionProviderClass="android.widget.ShareActionProvider"/>
+	
+</menu>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/save"
+        android:title="@string/save"
+        android:icon="@drawable/ic_action_save_state"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/generatePdf"
+        android:title="@string/generate_pdf"
+        android:icon="@drawable/ic_pdf_state"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/load"
+        android:title="@string/load"
+        android:showAsAction="never"/>
+
+</menu>

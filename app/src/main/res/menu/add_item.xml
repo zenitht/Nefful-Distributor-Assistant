@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.neffulapp.AddItemActivity">
+
+    <item
+        android:id="@+id/clear"
+        android:title="@string/clear"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/done"
+        android:title="@string/done"
+        android:showAsAction="always" />
+
+</menu>

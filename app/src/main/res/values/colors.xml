@@ -1,0 +1,12 @@
+<resources>
+
+    <color name="background_window">#FFE5E5E5</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#EDEDEF</color>
+    <color name="green">#008000</color>
+    <color name="alpha_purple">#20C05BD6</color>
+    <color name="nefful_my_purple">#8261A2</color>
+    <color name="action_bar_purple">#8658CE</color>
+    <color name="text_purple">#750082</color>
+
+</resources>

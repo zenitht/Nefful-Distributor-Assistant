@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:background="@drawable/rounded_corner"
+        android:layout_margin="10dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_extra_code"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/product_code"
+            android:inputType="textCapCharacters"
+            android:maxLength="10" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_extra_name"
+            android:layout_below="@+id/add_extra_code"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="@string/product_name"
+            android:inputType="textCapWords"
+            android:imeOptions="actionDone"
+            android:maxLength="40"
+            android:layout_toLeftOf="@+id/linearLayout" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/add_extra_category"
+            android:layout_below="@+id/add_extra_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/linearLayout" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/add_extra_subcategory"
+            android:layout_below="@+id/add_extra_category"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/linearLayout" />
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/relativeLayout"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:id="@+id/linearLayout"
+            android:layout_alignParentTop="true">
+
+            <com.neffulapp.view.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:scaleType="centerCrop"
+                app:corner_radius="2dp"
+                app:border_width="1dp"
+                app:border_color="#a3a3a3"
+                app:round_background="true"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:id="@+id/photo_preview"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                tools:ignore="ContentDescription"
+                android:src="@drawable/placeholder_image"
+                android:layout_above="@+id/add_extra_choose_photo"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="2dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_photo"
+                android:id="@+id/add_extra_choose_photo"
+                android:textSize="12sp"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="true"
+                android:background="@android:drawable/btn_default" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/add_extra_subcategory"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/relativeLayout">
+
+            <com.neffulapp.view.MultiSelectSpinner
+                android:id="@+id/add_extra_sizes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.neffulapp.view.MultiSelectSpinner
+                android:id="@+id/add_extra_colors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_extra_sizes"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:weightSum="1"
+                android:layout_below="@+id/add_extra_colors">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/add_extra_price"
+                    android:hint="@string/price"
+                    android:layout_weight="0.35"
+                    android:maxLength="4"
+                    android:inputType="number" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/add_extra_labor"
+                    android:layout_weight="0.35"
+                    android:hint="@string/labor_cost_opt"
+                    android:maxLength="4" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add"
+                    android:id="@+id/add_extra_add"
+                    android:layout_weight="0.3"
+                    android:textSize="12sp"
+                    android:background="@android:drawable/btn_default" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableLayout
+                android:id="@+id/add_extra_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/size"
+                        android:id="@+id/textView"
+                        android:layout_weight="0.3"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/full_cell_border" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/color"
+                        android:id="@+id/textView2"
+                        android:layout_weight="0.45"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/full_cell_border" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price"
+                        android:id="@+id/textView3"
+                        android:layout_weight="0.15"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/full_cell_border" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/labor_cost"
+                        android:id="@+id/textView4"
+                        android:layout_weight="0.1"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@drawable/full_cell_border" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar_add"
+            android:visibility="invisible"
+            android:indeterminate="true"
+            android:layout_gravity="bottom" />
+    </FrameLayout>
+
+</FrameLayout>

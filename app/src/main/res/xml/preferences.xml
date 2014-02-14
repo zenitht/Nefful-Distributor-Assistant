@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Sort Tabs Order">
+        <com.neffulapp.CustomListPreference
+            android:key="Beautiful Story"
+            android:title="Beautiful Story" />
+        <com.neffulapp.CustomListPreference
+            android:key="Teviron Story"
+            android:title="Teviron Story" />
+        <com.neffulapp.CustomListPreference
+            android:key="Young Life Story"
+            android:title="Young Life Story" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Sort Item List Order">
+        <com.neffulapp.CustomListPreference
+            android:key="All Subcategories"
+            android:title="Subcategories" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

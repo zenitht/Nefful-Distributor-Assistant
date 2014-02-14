@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviewActivity">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/preview_infobar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:fastScrollEnabled="true"
+        android:persistentDrawingCache="scrolling"
+        android:scrollingCache="false" />
+
+    <LinearLayout
+        android:id="@+id/preview_infobar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#262626"
+        android:weightSum="100"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/item_list_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_weight="50" />
+
+        <TextView
+            android:id="@+id/preview_order_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_weight="50" />
+    </LinearLayout>
+
+</RelativeLayout>
